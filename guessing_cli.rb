@@ -5,11 +5,9 @@ def run_guessing_game
 
   if input.to_i == random_number
     puts "You guessed the correct number!"
-  end
-  if input == "exit"
+  elsif input == "exit"
     puts "Goodbye!"
-  end
-  if input.to_i != random_number
+  else
     puts "The computer guessed #{random_number}."
   end
 end
